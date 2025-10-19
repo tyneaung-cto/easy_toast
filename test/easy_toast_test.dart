@@ -1,16 +1,15 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:easy_toast/easy_toast.dart';
+import 'package:easy_toast_plus/easy_toast.dart';
 
 void main() {
-  testWidgets('EasyToast.show displays a toast message', (WidgetTester tester) async {
+  testWidgets('EasyToast.show displays a toast message', (
+    WidgetTester tester,
+  ) async {
     // Build a simple test widget
     await tester.pumpWidget(
       const MaterialApp(
-        home: Scaffold(
-          body: Center(child: Text('Test App')),
-        ),
+        home: Scaffold(body: Center(child: Text('Test App'))),
       ),
     );
 

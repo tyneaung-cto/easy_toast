@@ -111,7 +111,7 @@ flutter run example/lib/main.dart
 
 ## 🧠 Additional Information
 
-- Author: **TLP AI**
+- Author: **Tyne Aung**
 - License: **MIT**
 - Compatible with: **Flutter 3.0+**
 - Contributions, pull requests, and feedback are welcome!

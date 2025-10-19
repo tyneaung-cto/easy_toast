@@ -1,6 +1,6 @@
-name: easy_toast
+name: easy_toast_plus
 description: A lightweight Flutter toast package for showing simple toast messages anywhere in your app.
-version: 1.0.0
+version: 1.0.2
 repository: https://github.com/tyneaung-cto/easy_toast.git
 homepage: https://github.com/tyneaung-cto/easy_toast
 
