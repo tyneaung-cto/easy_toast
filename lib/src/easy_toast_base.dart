@@ -21,9 +21,8 @@ class EasyToast {
     ),
     ToastGravity gravity = ToastGravity.bottom,
   }) {
-    final overlay = Overlay.of(context);
-    if (overlay == null) return;
-
+    final overlay = Overlay.of(context, rootOverlay: true);
+    
     final overlayEntry = OverlayEntry(
       builder: (context) => _ToastWidget(
         message: message,
@@ -75,8 +74,8 @@ class _ToastWidget extends StatelessWidget {
         alignment = Alignment.center;
         break;
       case ToastGravity.bottom:
-      default:
         alignment = Alignment.bottomCenter;
+        break;
     }
 
     return Positioned.fill(
@@ -89,7 +88,7 @@ class _ToastWidget extends StatelessWidget {
             child: Container(
               padding: padding,
               decoration: BoxDecoration(
-                color: backgroundColor.withOpacity(0.9),
+                color: backgroundColor.withValues(alpha: 0.9),
                 borderRadius: BorderRadius.circular(borderRadius),
               ),
               child: Text(
